@@ -4,6 +4,17 @@
 
 This is a repository for reproducing the paper [SM-CBNet: A Speech-Based Parkinson’s Disease Diagnosis Model with SMOTE–ENN and CNN+BiLSTM](https://link.springer.com/chapter/10.1007/978-981-95-0030-7_4), which has been accepted as an oral presentation at the 2025 International Conference on Intelligent Computing (ICIC 2025).
 
+## Usage
+### Prepare Datasets
+We use a public datasets in our model, they can be downloaded from:
+
+[Parkinsons . UCI Machine Learning Repository.](https://archive.ics.uci.edu/dataset/174/parkinsons)
+
+[Parkinson's Disease Classificatio . UCI Machine Learning Repository](https://www.ejece.org/index.php/ejece/article/view/488)
+
+### Use this benchmark to evaluate
+
+
 ## Citation
 If you think that our work is useful to your research, please cite using this BibTeX:
 ```bibtex
