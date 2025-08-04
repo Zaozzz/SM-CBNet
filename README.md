@@ -8,9 +8,9 @@ This is a repository for reproducing the paper [SM-CBNet: A Speech-Based Parkins
 ### Prepare Datasets
 We use a public datasets in our model, they can be downloaded from:
 
-[Parkinsons . UCI Machine Learning Repository.](https://archive.ics.uci.edu/dataset/174/parkinsons)
+[Parkinsons UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/174/parkinsons)
 
-[Parkinson's Disease Classificatio . UCI Machine Learning Repository](https://www.ejece.org/index.php/ejece/article/view/488)
+[Parkinson's Disease Classificatio UCI Machine Learning Repository](https://www.ejece.org/index.php/ejece/article/view/488)
 
 ### Use this benchmark to evaluate
 
