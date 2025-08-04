@@ -7,15 +7,7 @@ If you think that our work is useful to your research, please cite using this Bi
 ```bibtex
 
 @InProceedings{10.1007/978-981-95-0030-7_4,
-author="Wang, Xu
-and Pan, Weichao
-and Liu, Ruida
-and Tian, Zhen
-and Jin, Keyan",
-editor="Huang, De-Shuang
-and Chen, Haiming
-and Li, Bo
-and Zhang, Qinhu",
+author="Wang Xu, Pan Weichao, Liu Ruida, Tian Zhen, Jin Keyan",
 title="SM-CBNet: A Speech-Based Parkinson's Disease Diagnosis Model with SMOTE--ENN and CNN{\thinspace}+{\thinspace}BiLSTM Integration",
 booktitle="Advanced Intelligent Computing Technology and Applications",
 year="2025",
