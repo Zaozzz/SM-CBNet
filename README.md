@@ -12,9 +12,54 @@ We use a public datasets in our model, they can be downloaded from:
 
 [Parkinson's Disease Classificatio UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification)
 
-### Use this benchmark to evaluate
+### 🔧 Environment Setup
 
-Code is Coming
+```bash
+git clone https://github.com/Zaozzz/SM-CBNet.git
+cd SM-CBNet
+conda create -n smcbnet python=3.10 -y
+conda activate smcbnet
+pip install -r requirements.txt
+```
+
+### 📁 Project Structure
+
+```bash
+SM-CBNet
+├── data/                         
+│   ├── parkinsons.csv                    
+├── dataload.py
+├── model.py
+├── main.py
+├── requirements.txt      
+└── README.md
+```
+
+### 🚀 Quick Start
+
+```bash
+python main.py \
+  --data data/parkinsons.csv \
+  --target status \
+  --epochs 10 \
+  --batch 32
+```
+
+### 🔍 Inference
+
+```bash
+import pandas as pd
+from tensorflow.keras.models import load_model
+
+model = load_model("saved_model/smcbnet.h5")
+
+df_new = pd.read_csv("data/new_cases.csv")
+X = df_new.values.reshape(df_new.shape[0], -1, 1)
+
+probs = model.predict(X)
+preds = (probs > 0.5).astype(int).flatten()
+print(preds)
+```
 
 ## Citation
 If you think that our work is useful to your research, please cite using this BibTeX:
