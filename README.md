@@ -11,9 +11,11 @@ This repository contains the full pipeline for reproducing the paper titled:
 
 **"SM-CBNet: A Speech-Based Parkinson’s Disease Diagnosis Model with SMOTE–ENN and CNN+BiLSTM"**, accepted at the **2025 International Conference on Intelligent Computing (ICIC)**.
 
-<img src="model.jpg" alt="SM-CBNet Model" width="600"/>
+<div align="center">
+  <img src="model.jpg" alt="SM-CBNet Model" width="600"/>
+</div>
 
-The model aims to improve early screening for **Parkinson’s Disease (PD)** using deep learning methods on speech data.
+Parkinson's disease (PD) is the second most prevalent neurodegenerative disorder worldwide. Speech-based diagnostic approaches for PD have attracted increasing attention, with deep learning models demonstrating promising performance. In this paper, we propose a speech-based diagnostic model for PD, aiming to enhance the diagnostic accuracy using deep learning techniques. We adopt the SMOTE–ENN oversampling method to solve the data imbalance problem, and develop a hybrid model that integrates a Convolutional Neural Network (CNN) and Bi-directional Long and Short-Term Memory network (BiLSTM) to efficiently extract the speech features and capture temporal dependencies. Experimental results show that the proposed model achieves an accuracy of 95% on public datasets and outperforms traditional machine learning and other deep learning models in several evaluation metrics, validating the effectiveness of our network in Parkinson's disease diagnosis. These results validate the effectiveness of our approach and highlight its potential for high-precision early screening of PD, offering reliable technical support for clinical applications.
 
 ---
 
