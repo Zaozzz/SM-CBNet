@@ -14,7 +14,8 @@ This repository contains the full pipeline for reproducing the paper titled:
 <div align="center">
   <img src="model.jpg" alt="SM-CBNet Model" width="600"/>
 </div>
-We propose **a speech-based diagnostic model** for PD, aiming to enhance the diagnostic accuracy using deep learning techniques. We adopt the **SMOTE–ENN** oversampling method to solve the data imbalance problem, and develop a hybrid model that integrates a **CNN** and **BiLSTM** to efficiently extract the speech features and capture temporal dependencies.
+
+We propose **a speech-based diagnostic model** for PD. We adopt the **SMOTE–ENN** oversampling method to solve the data imbalance problem, and develop a hybrid model that integrates a **CNN** and **BiLSTM** to efficiently extract the speech features and capture temporal dependencies.
 
 ---
 
