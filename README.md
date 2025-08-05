@@ -15,25 +15,33 @@ We use a public datasets in our model, they can be downloaded from:
 ### 🔧 Environment Setup
 
 ```bash
-git clone https://github.com/Zaozzz/SM-CBNet.git
+# 1. Clone the repository
+git clone https://github.com/yourname/SM-CBNet.git
 cd SM-CBNet
+
+# 2. (Recommended) Create a dedicated Conda environment
 conda create -n smcbnet python=3.10 -y
 conda activate smcbnet
+
+# 3. Install dependencies
 pip install -r requirements.txt
-```
+````
+---
 
 ### 📁 Project Structure
 
-```bash
+```
 SM-CBNet
-├── data/                         
-│   ├── parkinsons.csv                    
-├── dataload.py
-├── model.py
-├── main.py
-├── requirements.txt      
+├── data/                         # Place your datasets here
+│   └── parkinsons.csv            # Example merged CSV
+├── dataload.py                   # Data loading + SMOTE–ENN oversampling
+├── model.py                      # CNN+BiLSTM architecture
+├── main.py                       # Training & evaluation entry point
+├── requirements.txt              # Dependency list
 └── README.md
 ```
+
+---
 
 ### 🚀 Quick Start
 
@@ -45,21 +53,39 @@ python main.py \
   --batch 32
 ```
 
+| Argument          | Description                    | Default |
+| ----------------- | ------------------------------ | ------- |
+| `--no_oversample` | Disable SMOTE–ENN oversampling | Off     |
+| `--epochs`        | Number of training epochs      | 10      |
+| `--batch`         | Batch size                     | 32      |
+
+After training, the script automatically prints a **Confusion Matrix** and **Classification Report**.
+
+---
+
 ### 🔍 Inference
 
-```bash
+```python
 import pandas as pd
 from tensorflow.keras.models import load_model
 
+# Load the trained model
 model = load_model("saved_model/smcbnet.h5")
 
+# Read and preprocess new samples
 df_new = pd.read_csv("data/new_cases.csv")
-X = df_new.values.reshape(df_new.shape[0], -1, 1)
+X = df_new.values.reshape(df_new.shape[0], -1, 1)  # (samples, timesteps, 1)
 
+# Predict
 probs = model.predict(X)
 preds = (probs > 0.5).astype(int).flatten()
 print(preds)
 ```
+
+---
+
+
+
 
 ## Citation
 If you think that our work is useful to your research, please cite using this BibTeX:
