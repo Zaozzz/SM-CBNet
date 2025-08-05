@@ -9,7 +9,7 @@
 
 This repository contains the full pipeline for reproducing the paper titled:
 
-**"SM-CBNet: A Speech-Based Parkinson’s Disease Diagnosis Model with SMOTE–ENN and CNN+BiLSTM"**, accepted at the **2025 International Conference on Intelligent Computing (ICIC)**.
+**"SM-CBNet: A Speech-Based Parkinson’s Disease Diagnosis Model with SMOTE–ENN and CNN+BiLSTM"**, accepted at the **2025 International Conference on Intelligent Computing (ICIC 2025)**.
 
 <div align="center">
   <img src="model.jpg" alt="SM-CBNet Model" width="600"/>
