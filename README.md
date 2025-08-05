@@ -10,7 +10,7 @@ We use a public datasets in our model, they can be downloaded from:
 
 [Parkinsons UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/174/parkinsons)
 
-[Parkinson's Disease Classificatio UCI Machine Learning Repository](https://www.ejece.org/index.php/ejece/article/view/488)
+[Parkinson's Disease Classificatio UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/470/parkinson+s+disease+classification)
 
 ### Use this benchmark to evaluate
 
