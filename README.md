@@ -76,11 +76,13 @@ python main.py \
 
 ### 🛠️ Available Arguments
 
+<div align="center">
 | Argument          | Description                    | Default |
 | ----------------- | ------------------------------ | ------- |
 | `--no_oversample` | Disable SMOTE–ENN oversampling | Off     |
 | `--epochs`        | Number of training epochs      | 10      |
 | `--batch`         | Batch size                     | 32      |
+</div>
 
 🧾 After training, the model will output:
 
