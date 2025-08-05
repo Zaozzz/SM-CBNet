@@ -14,8 +14,7 @@ This repository contains the full pipeline for reproducing the paper titled:
 <div align="center">
   <img src="model.jpg" alt="SM-CBNet Model" width="600"/>
 </div>
-
-Parkinson's disease (PD) is the second most prevalent neurodegenerative disorder worldwide. Speech-based diagnostic approaches for PD have attracted increasing attention, with deep learning models demonstrating promising performance. In this paper, we propose a speech-based diagnostic model for PD, aiming to enhance the diagnostic accuracy using deep learning techniques. We adopt the SMOTE–ENN oversampling method to solve the data imbalance problem, and develop a hybrid model that integrates a Convolutional Neural Network (CNN) and Bi-directional Long and Short-Term Memory network (BiLSTM) to efficiently extract the speech features and capture temporal dependencies.
+We propose a speech-based diagnostic model for PD, aiming to enhance the diagnostic accuracy using deep learning techniques. We adopt the SMOTE–ENN oversampling method to solve the data imbalance problem, and develop a hybrid model that integrates a Convolutional Neural Network (CNN) and Bi-directional Long and Short-Term Memory network (BiLSTM) to efficiently extract the speech features and capture temporal dependencies.
 
 ---
 
